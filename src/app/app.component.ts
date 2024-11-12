@@ -10,4 +10,12 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'lazyLoad';
+
+  isLoading =true;
+
+  constructor(){
+    setTimeout (()=>{
+      this.isLoading = false
+    },3000)
+  }
 }
